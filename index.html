@@ -170,8 +170,20 @@
 			app.style.display="none";
 		window.onload=function(){
 			
-			window.location.href = window.location.href+"zh-CN/component/layout"
-			app.style.display="block";
+			var time = null;
+			time = setInterval(function(){
+				var url = window.location.href;
+					var arr = url.split("#");
+					console.log(arr)
+					
+					if(arr[1]!=="/zh-CN/component/layout"){
+						window.location.href = arr[0]+"#/zh-CN/component/layout"
+						app.style.display="block";
+						clearInterval(time);
+						console.log(1)
+					}
+			},500)
+			
 		}
 		
 		
