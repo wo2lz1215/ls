@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="./static/css/font_137970_p1tpzmomxp9cnmi.css">
+		<link rel='mask-icon' href="https://raw.githubusercontent.com/ElemeFE/element/dev/examples/assets/images/element-logo-small.svg" color="#409EFF">
+		<title>UI框架</title>
+		<!--<link rel="shortcut icon" href="favicon.ico">-->
+		<link href="./static/css/docs.934b36a.css" rel="stylesheet">
+			<style>
+				.nav-item.sponsors,.headerWrapper{
+					display: none;
+				}
+				.demo-block .demo-block-control .control-button{
+					display: none;
+				}
+				
+				.myHead {
+					width: 100%;
+					height: 80px;
+					position: fixed;
+					z-index: 99;
+					box-shadow: 0px 3px 5px #ccc;
+					background:#3d67fe url("./static/img/tou.png") no-repeat;
+					background-size: 100% 100%;
+					
+				}
+				
+				.pure-menu-list .nav-item a{
+					padding-left: 15px;
+				}
+				
+				
+				.pure-menu-list .nav-item{
+					padding: 5px 20px 5px 0;
+				}
+				
+				.side-nav .nav-item .nav-item a.active, .side-nav .nav-item .nav-item a:hover{
+					color: #fff;
+				}
+				
+				
+				.pure-menu-list .nav-item a.router-link-exact-active.active,
+				.pure-menu-list .nav-item a:hover{
+					background-image:  -webkit-linear-gradient(left,#1b73ff,#4ac8ff);
+					border-radius: 5px;
+					box-shadow: 3px 3px 5px rgba(0,0,0,.25);
+				}
+				
+				
+				.logo{
+					display: inline-block;
+					width: 120px;
+					height: 80px;
+					background: url("./static/img/logo.png") no-repeat left center;
+				}
+				
+				
+				@media (max-width: 768px){
+					.myHead {
+    padding-left: 50px;
+	}
+				}
+				
+				.myHead .page-container.page-component{
+					height: 80px;
+					line-height: 80px;
+					padding-top: 0;
+				}
+				
+				.myHead .dowBtnBox{
+					position: relative;
+					width: 200px;
+					height: 80px;
+					float: right;
+					text-align: center;
+					line-height: 80px;
+					right: -100px;
+					
+					
+				}
+				
+				.myHead .dowBtnBox a{
+					padding: 6px 15px;
+					border-radius: 5px;
+					background-color: #1B73FF;
+					color: #fff;
+					font-size: 14px;
+				}
+				
+				
+				.myHead .dowBtnBox:after{
+					position: absolute;
+					content: "";
+					background: #fff;
+					left: 0;
+					top: 0;
+					right: -500px;
+					bottom: 0;
+					z-index: -1;
+					transform: skew(45deg);
+				}
+				
+				.logoTxt{
+					display: inline-block;
+					height: 80px;
+					line-height: 80px;
+					font-size: 24px;
+					color:#fff;
+					vertical-align: top;
+				}
+
+
+				
+			</style>
+	</head>
+
+	<body>
+		<script>
+			if(!window.Promise) {
+				document.write('<script src="//cdn.jsdelivr.net/npm/es6-promise@4.1.1/dist/es6-promise.min.js"><\/script><script>ES6Promise.polyfill()<\/script>')
+			}
+		</script>
+		<div class="myHead">
+			<div class="page-container page-component">
+				<div class="logo ">
+				</div>
+				<span class="logoTxt">
+					MediaG-UI
+				</span>
+			
+			<div class="dowBtnBox">
+				<a  href="./static/data/MediaG-UI.rar"  download="MediaG-UI.rar">下载</a>
+			</div>
+			
+			</div>
+			
+		</div>
+		<div id="app"></div>
+		<script src="./static/js/vue.runtime.min.js"></script>
+		<script src="./static/js/vue-router.min.js"></script>
+		
+		<script type="text/javascript" src="manifest.042c18f.js"></script>
+		<script type="text/javascript" src="element-ui.042c18f.js"></script>
+		<script type="text/javascript" src="docs.042c18f.js"></script>
+	</body>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-84335471-1', 'auto');
+		ga('send', 'pageview');
+
+		window.addEventListener('hashchange', function() {
+			ga('set', 'page', window.location.href);
+			ga('send', 'pageview');
+		});
+		var app = document.getElementById("app");
+			app.style.display="none";
+		window.onload=function(){
+			
+			window.location.href = window.location.href+"zh-CN/component/layout"
+			app.style.display="block";
+		}
+		
+		
+	</script>
+
+</html>
